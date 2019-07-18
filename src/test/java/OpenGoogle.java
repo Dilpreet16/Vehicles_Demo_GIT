@@ -1,7 +1,4 @@
-import com.vehicles.Airplane;
-import com.vehicles.Bike;
-import com.vehicles.Car;
-import com.vehicles.Scooter;
+import com.vehicles.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -13,6 +10,7 @@ public class OpenGoogle {
     private static Bike bike = new Bike();
     private static Car car = new Car();
     private static Scooter scooter = new Scooter();
+    private static Truck truck = new Truck();
 
     public static void main(String[] args) {
         System.out.println("Calling init method for opening www.google.com and searching for Bike....");
@@ -21,6 +19,7 @@ public class OpenGoogle {
         tests.searchForVehicle(bike);
         tests.searchForVehicle(car);
         tests.searchForVehicle(scooter);
+        tests.searchForVehicle(truck);
     }
 
     public static WebDriver init() {
